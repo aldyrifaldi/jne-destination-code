@@ -1,4 +1,4 @@
-CREATE TABLE `jne_destination` (
+CREATE TABLE `origin_destination_codes` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `code` varchar(255) DEFAULT NULL,
   `name` varchar(255) DEFAULT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE `jne_destination` (
   KEY `name` (`name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-INSERT INTO `jne_destination` (`id`, `code`, `name`)
+INSERT INTO `origin_destination_codes` (`id`, `code`, `name`)
 VALUES
 	(1,'CBN20301','ARGAPURA,MAJALENGKA'),
 	(2,'KDI20401','ABUKI,UNAAHA'),
@@ -6061,7 +6061,7 @@ VALUES
 	(6050,'PKU21210','SUNGAI APIT,SIAKSRIINDAPURA'),
 	(6051,'PKU21200','SIAKSRIINDAPURA');
 
-INSERT INTO `jne_destination` (`id`, `code`, `name`)
+INSERT INTO `origin_destination_codes` (`id`, `code`, `name`)
 VALUES
 	(6052,'PDG21203','SITIUNG,PUALU PUNJUNG'),
 	(6053,'PDG21204','SUNGAI RUMBAI,PUALU PUNJUNG'),
