@@ -1,4 +1,4 @@
-CREATE TABLE `jne_destination` (
+CREATE TABLE `origin_destination_codes` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `code` varchar(255) DEFAULT NULL,
   `name` varchar(255) DEFAULT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE `jne_destination` (
   KEY `name` (`name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-INSERT INTO `jne_destination` (`id`, `code`, `name`)
+INSERT INTO `origin_destination_codes` (`id`, `code`, `name`)
 VALUES
 	(1,'CBN20301','ARGAPURA,MAJALENGKA'),
 	(2,'KDI20401','ABUKI,UNAAHA'),
